@@ -1,0 +1,277 @@
+S > WEAPON % 1
+S > WAND % 1
+S > CONSUMABLE % 2
+S > WEARABLE % 1
+
+WEAPON > DAMAGE club SPELL BONUS % 1
+WEAPON > DAMAGE dagger SPELL BONUS % 1
+WEAPON > DAMAGE handaxe SPELL BONUS % 1
+WEAPON > DAMAGE javelin SPELL BONUS % 1
+WEAPON > DAMAGE light-hammer SPELL BONUS % 1
+WEAPON > DAMAGE mace SPELL BONUS % 1
+WEAPON > DAMAGE quarterstaff SPELL BONUS % 1
+WEAPON > DAMAGE sickle SPELL BONUS % 1
+WEAPON > DAMAGE spear SPELL BONUS % 1
+WEAPON > DAMAGE crossbow(light) SPELL BONUS % 1
+WEAPON > DAMAGE shortbow SPELL BONUS % 1
+WEAPON > DAMAGE sling SPELL BONUS % 1
+WEAPON > DAMAGE battleaxe SPELL BONUS % 1
+WEAPON > DAMAGE flail SPELL BONUS % 1
+WEAPON > DAMAGE glaive SPELL BONUS % 1
+WEAPON > DAMAGE greataxe SPELL BONUS % 1
+WEAPON > DAMAGE greatsword SPELL BONUS % 1
+WEAPON > DAMAGE halberd SPELL BONUS % 1
+WEAPON > DAMAGE lance SPELL BONUS % 1
+WEAPON > DAMAGE longsword SPELL BONUS % 1
+WEAPON > DAMAGE maul SPELL BONUS % 1
+WEAPON > DAMAGE morningstar SPELL BONUS % 1
+WEAPON > DAMAGE pike SPELL BONUS % 1
+WEAPON > DAMAGE rapier SPELL BONUS % 1
+WEAPON > DAMAGE scimitar SPELL BONUS % 1
+WEAPON > DAMAGE shortsword SPELL BONUS % 1
+WEAPON > DAMAGE trident SPELL BONUS % 1
+WEAPON > DAMAGE warpick SPELL BONUS % 1
+WEAPON > DAMAGE warhammer SPELL BONUS % 1
+WEAPON > DAMAGE whip SPELL  BONUS % 1
+WEAPON > DAMAGE blowgun SPELL BONUS % 1
+WEAPON > DAMAGE crossbow(hand) SPELL BONUS % 1
+WEAPON > DAMAGE crossbow(heavy) SPELL BONUS % 1
+WEAPON > DAMAGE longbow SPELL BONUS % 1
+
+DAMAGE > DAMAGETYPE DIE % 1
+DAMAGE > $ % 5
+
+DAMAGETYPE > fire % 1
+DAMAGETYPE > necrotic % 1
+DAMAGETYPE > slashing % 1
+DAMAGETYPE > piercing % 1
+DAMAGETYPE > bludgeoning % 1
+DAMAGETYPE > cold % 1
+DAMAGETYPE > poison % 1
+DAMAGETYPE > acid % 1
+DAMAGETYPE > psychic % 1
+DAMAGETYPE > radiant % 1
+DAMAGETYPE > force % 1
+DAMAGETYPE > thunder % 1
+DAMAGETYPE > lightning % 1
+
+DIE > INT d4 % 8
+DIE > INT d6 % 6
+DIE > INT d8 % 4
+DIE > INT d10 % 2
+DIE > INT d12 % 1
+
+BONUS > +1 % 10
+BONUS > +2 % 2
+BONUS > +3 % 1
+BONUS > $ % 15
+
+INT > 1 % 20
+INT > 2 % 10
+INT > 3 % 5
+INT > 4 % 1
+
+WEARABLE > ARMOR % 1
+WEARABLE > ACCESSORY % 1
+
+ARMOR > RESISTANCE padded BONUS % 1
+ARMOR > RESISTANCE leather BONUS % 1
+ARMOR > RESISTANCE studded-leather BONUS % 1
+ARMOR > RESISTANCE hide BONUS % 1
+ARMOR > RESISTANCE chain-shirt BONUS % 1
+ARMOR > RESISTANCE scale-mail BONUS % 1
+ARMOR > RESISTANCE breastplate BONUS % 1
+ARMOR > RESISTANCE half-plate BONUS % 1
+ARMOR > RESISTANCE ring-mail BONUS % 1
+ARMOR > RESISTANCE chain-mail BONUS % 1
+ARMOR > RESISTANCE splint BONUS % 1
+ARMOR > RESISTANCE plate BONUS % 1
+ARMOR > RESISTANCE shield BONUS % 1
+
+RESISTANCE > DAMAGETYPE resistance % 1
+RESISTANCE > $ % 10
+
+ACCESSORY > ring ATTRIBUTE % 1
+ACCESSORY > boots ATTRIBUTE MOVEMENT % 1
+ACCESSORY > circlet ATTRIBUTE % 1
+ACCESSORY > necklace ATTRIBUTE % 1
+ACCESSORY > band ATTRIBUTE % 1
+ACCESSORY > earrings ATTRIBUTE % 1
+
+ATTRIBUTE > STAT INCREASE % 1
+ATTRIBUTE > SKILL advantage % 1
+ATTRIBUTE > STAT SET % 1
+ATTRIBUTE > $ % 10
+
+STAT > intelligence % 1
+STAT > charisma % 1
+STAT > wisdom % 1
+STAT > strength % 1
+STAT > dexterity % 1
+STAT > constitution % 1
+
+INCREASE > +1 % 20
+INCREASE > +2 % 7
+INCREASE > +3 % 5
+INCREASE > +4 % 3
+INCREASE > +5 % 1
+
+SKILL > athletics % 1
+SKILL > acrobatics % 1
+SKILL > sleight of hand % 1
+SKILL > stealth % 1
+SKILL > arcana % 3
+SKILL > history % 3
+SKILL > investigation % 2
+SKILL > nature % 3
+SKILL > religion % 3
+SKILL > animal handling % 3
+SKILL > insight % 2
+SKILL > medicine % 3
+SKILL > perception % 1
+SKILL > survival % 2
+SKILL > deception % 1
+SKILL > intimidation % 1
+SKILL > performance % 3
+SKILL > persuasion % 1
+
+SET > 16 % 10
+SET > 17 % 7
+SET > 18 % 5
+SET > 19 % 3
+SET > 20 % 1
+
+CONSUMABLE > potion EFFECT % 1
+CONSUMABLE > gem SPELLCOMBAT % 1
+CONSUMABLE > trinket SPELLUTILITY % 1
+
+EFFECT > heal HEAL % 1
+EFFECT > poison DIE constitution SAVE % 1
+EFFECT > CONDITION % 1
+
+HEAL > 2d4+2 % 20
+HEAL > 4d4+4 % 10
+HEAL > 8d4+8 % 5
+HEAL > 10d4+20 % 1
+
+CONDITION > blinded TIME constitution SAVE % 1
+CONDITION > deafened TIME constitution SAVE % 1
+CONDITION > incapacitated TIME constitution SAVE % 1
+CONDITION > paralyzed TIME constitution SAVE % 1
+CONDITION > invisible TIME % 1
+CONDITION > petrified TIME constitution SAVE % 1
+CONDITION > cure-petrified % 1
+CONDITION > cure-poisoned % 1
+CONDITION > cure-paralysis % 1
+CONDITION > cure-blindness/deafness % 1
+
+TIME > 1-minute % 10
+TIME > 10-minutes % 7
+TIME > 1-hour % 3
+TIME > 8-hours % 1
+
+SAVE > dc 10 % 15
+SAVE > dc 11 % 13
+SAVE > dc 12 % 11
+SAVE > dc 13 % 7
+SAVE > dc 14 % 5
+SAVE > dc 15 % 3
+SAVE > dc 16 % 1
+
+MOVEMENT > +5ft % 10
+MOVEMENT > +10ft % 7
+MOVEMENT > +15ft % 3
+MOVEMENT > +20ft  % 1
+MOVEMENT > 35ft % 8
+MOVEMENT > 40ft % 7
+MOVEMENT > 45ft % 6
+
+SPELL > SPELLUTILITY 1 charge % 1
+SPELL > $ % 20
+
+WAND > wand SPELLCOMBAT CHARGE charges % 1
+WAND > wand SPELLUTILITY CHARGE charges % 1
+
+CHARGE > 1 % 10
+CHARGE > 2 % 5
+CHARGE > 3 % 3
+CHARGE > 4 % 2
+CHARGE > 5 % 1
+
+
+SPELLCOMBAT > color-spray % 4
+SPELLCOMBAT > command % 4
+SPELLUTILITY > comprehend-language % 4
+SPELLUTILITY > create-or-destroy-water % 4
+SPELLCOMBAT > cure-wounds % 2
+SPELLUTILITY > detect-good-and-evil % 4
+SPELLUTILITY > detect-magic % 4
+SPELLUTILITY > detect-poison-and-disease % 4
+SPELLUTILITY > disguise-self % 3
+SPELLCOMBAT > entangle % 4
+SPELLCOMBAT > expeditious-retreat % 4
+SPELLCOMBAT > faerie-fire % 4
+SPELLUTILITY > feather-fall % 4
+SPELLUTILITY > floating-disk % 4
+SPELLCOMBAT > fog-cloud % 4
+SPELLCOMBAT > grease % 4
+SPELLCOMBAT > guiding-bolt % 3
+SPELLCOMBAT > healing-word % 3
+SPELLCOMBAT > hellish-rebuke % 4
+SPELLCOMBAT > heroism % 4
+SPELLCOMBAT > hideous-laughter % 4
+SPELLCOMBAT > hunters-mark % 4
+SPELLUTILITY > identify % 4
+SPELLUTILITY > illusory-script % 4
+SPELLCOMBAT > inflict-wounds % 3
+SPELLUTILITY > jump % 4
+SPELLUTILITY > longstrider % 4
+SPELLCOMBAT > magic-missile % 4
+SPELLUTILITY > purify-food-and-drink % 4
+SPELLCOMBAT > shield % 4
+SPELLUTILITY > silent-image % 4
+SPELLUTILITY > sleep % 4
+SPELLUTILITY > speak-with-animals % 4
+SPELLCOMBAT > thunderwave % 4
+SPELLUTILITY > unseen-servant % 4
+SPELLCOMBAT > acid-arrow % 2
+SPELLUTILITY > alter-self % 2
+SPELLUTILITY > animal-messenger % 2
+SPELLUTILITY > arcane-lock % 2
+SPELLUTILITY > arcanists-magic-aura % 2
+SPELLCOMBAT > barkskin % 2
+SPELLCOMBAT > blindness-deafness % 1
+SPELLCOMBAT > blur % 1
+SPELLUTILITY > calm-emotions % 2
+SPELLCOMBAT > branding-smite % 1
+SPELLUTILITY > continual-flame % 2
+SPELLCOMBAT > darkness % 2
+SPELLUTILITY > dark-vision % 2
+SPELLUTILITY > detect-thoughts % 1
+SPELLUTILITY > enhance-abilities % 1
+SPELLCOMBAT > enlarge-reduce % 2
+SPELLUTILITY > enthrall % 2
+SPELLCOMBAT > flaming-sphere % 1
+SPELLUTILITY > gentle-repose % 2
+SPELLCOMBAT > hold-person % 1
+SPELLUTILITY > invisibility % 1
+SPELLUTILITY > knock % 2
+SPELLUTILITY > lesser-restoration % 2
+SPELLUTILITY > levitate % 2
+SPELLUTILITY > locate-object % 2
+SPELLCOMBAT > mirror-image % 2
+SPELLUTILTY > misty-step % 2
+SPELLCOMBAT > moon-beam % 2
+SPELLUTILITY > protection-from-poison % 2
+SPELLCOMBAT > ray-of-enfeeblement % 2
+SPELLUTILITY > rope-trick % 2
+SPELLCOMBAT > scorching-ray % 1
+SPELLUTILITY > see-invisibility % 2
+SPELLCOMBAT > shatter % 2
+SPELLCOMBAT > silence % 1
+SPELLUTILITY > spider-climb % 2
+SPELLCOMBAT > spike-growth % 1
+SPELLCOMBAT > suggestion % 1
+SPELLCOMBAT > web % 2
+SPELLUTILITY > zone-of-truth % 2
+
