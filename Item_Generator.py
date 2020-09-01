@@ -1,3 +1,8 @@
+'''Goal of this program is to produce randomly generated items using a CFG and then also
+create an appropriate price for this item. The goal is for the items remain proportionally 
+priced regardless of the price constant set. i.e. potions are always 1/25 a magic sword or some
+such'''
+
 from collections import defaultdict
 from math import sqrt
 from numpy.random import choice
