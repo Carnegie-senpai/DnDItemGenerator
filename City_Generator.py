@@ -62,9 +62,29 @@ class Application(Frame):
         for i in range(0,int(self.set_point_number.get())):
             self.points.append(Point(self.canvas,randrange(1,self.c_width),randrange(1,self.c_height)))
     
+
+
     def generate_city(self):
+        generate_voronoi(self.points)
         print("Too be implemented")
 
+
+def handle_site_event(site):
+    print("Handling Site Event")
+
+def handle_edge_event(edge):
+    print("Handling Edge Event")
+
+''' Using fortune's algorithm to generate the voronoi graph'''
+def generate_voronoi(points):
+    events = sorted(points,key = lambda x: x.x)   #ordered queue of site events
+    while events != []:
+        event = events.pop(0)
+        if type(event) == Point:    #Site event
+            handle_site_event(event)
+        else:                       #Edge event
+            handle_edge_event(event)
+    #bound voronoi diagram's unclosed cells around perimeter
 root = Tk()
 
 app = Application(master=root)
